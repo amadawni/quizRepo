@@ -1,0 +1,37 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #20d300; /* Replace with your desired color */
+  animation: loader-animation 0.8s infinite ease-in-out;
+}
+
+.dot2 {
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
